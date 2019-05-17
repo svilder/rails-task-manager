@@ -2,7 +2,7 @@
 
 <% @tasks.each do |task| %>
   <p>
-    <input type="checkbox">
+    <%= "😉" if task.completed %>
     <%= task.title %>
     <%= link_to "View details", show_path(task) %>
     <%= link_to "Delete", show_path(task),
